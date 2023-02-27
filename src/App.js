@@ -4,6 +4,8 @@ import React, {useEffect,useState} from 'react';
 import axios from "axios";
 import Gallery from './Gallery';
 
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 
@@ -38,6 +40,7 @@ function App() {
   return (
 
     <div className="App">
+      
       <h2 style={{color:"Grey", margin:"20px"}}>  Welcome to Our Image Gallery Application </h2>
       <h4 style={{color:"Grey", margin:"20px"}}>  Search your item </h4>
       <form onSubmit={submitHandler}>
