@@ -39,6 +39,7 @@ function App() {
 
     <div className="App">
       <h2 style={{color:"Grey", margin:"20px"}}>  Welcome to Our Image Gallery Application </h2>
+      <h4 style={{color:"Grey", margin:"20px"}}>  Search your item </h4>
       <form onSubmit={submitHandler}>
           <input type="text" name="text" size="30" value={search} onChange={changeHandler}/> <br /><br />
           <input type="submit" name="search" />
@@ -51,7 +52,7 @@ function App() {
       {
         data.length>=1?<Gallery data={data} /> : <h3>Data not loaded...</h3>
       }
-      
+
 
     </div>
   );
